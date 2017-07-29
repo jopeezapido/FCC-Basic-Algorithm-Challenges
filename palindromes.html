@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Check For Palindromes Challenge</title>
+  </head>
+  
+  <body>
+    <h1>Checking For Palindromes</h1>
+	  <p><h2>Description</h2></p>
+	    <p>Return true if the given string is a palindrome. Otherwise, return false.</p>
+	    <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+	
+   	  <p><h2>Note:</h2></p>
+		 <ul>
+			<li>You'll need to remove all non-alphanumeric characters (punctuation, spaces and 				symbols) and turn everything lower case in order to check for palindromes.</li>
+		    	<li>We'll pass strings with varying formats, such as "racecar", "RaceCar", and" race 			CAR" among others.</li>
+		    	<li>We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and 				"2_A3*3#A2".</li>
+			<p>Remember to use Read-Search-Ask if you get stuck. Write your own code.</p>
+		    </ul> 
+	  
+	   <h2>Steps:</h2>
+		<ol>
+		 <li>Separate the string to indvidual characters.</li>
+		 <li>Reverse the separated string.</li>
+		 <li>Check if the reverse string is the same as the original string (unreveresed string).	            </li>
+	     </ol>
+	  
+		<h2>Code:</h2>
+		  <form id="form">
+		   	<div class="form-group">
+				<label for="word">Input word to be checked if it's a palindrome: </label>
+				<input type="text" placeholder="Input text to be checked here" id="word">
+			</div> 
+			<button type="submit" class="btn btn-default">Click to check!</button
+		</form>
+	
+  </body> 
+</html>
