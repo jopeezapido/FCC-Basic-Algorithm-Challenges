@@ -1,0 +1,33 @@
+-Factorialize A Number-
+
+Return the factorial of the provided integer.
+
+If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
+
+Factorials are often represented with the shorthand notation n!
+
+For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+Here are some helpful links:
+
+Arithmetic Operators
+
+Required:
+- Factorial of the provided integer
+
+What we need:
+- We need an empty array where to put the factorials in
+	>We need a loop to get each of the factorials of num
+	>We need to push the factorials from the loop to the array
+- We need to access each of the element in that array and get their value
+- We need to perform a function to multiply all those values in the array to each other
+	- we need a loop to to access each element
+
+Steps:
+- Create a 'box' to put value in so that it is an array type (easliy looped and accessed)
+- Loop through num from 0
+- Inside each of that loop, return the number that the loop passes
+- 
+
