@@ -1,0 +1,25 @@
+-Chunky Monkey Challenge-
+
+Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+Here are some helpful links:
+
+	*Array.prototype.push()
+	*Array.prototype.slice()
+
+Required:
+- Two-dimensional array 
+
+What do you need?
+- You need to know if you will get a remainder when you divide arr by size or if it will equal to 0
+	*You need to perform a function if the remainder is 0
+		*You need to convert the pushed value into an array before pushing it to a new array
+		*
+	*You need to perfrom a function if there is a remainder
+
+Steps:
+- get the length of arr
+- get the remainder of length of arr and size
+- make a decision to

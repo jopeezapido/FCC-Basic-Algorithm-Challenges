@@ -1,0 +1,29 @@
+Seek and Destroy
+
+You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
+
+Remember to use Read-Search-Ask if you get stuck. Write your own code.
+
+Here are some helpful links:
+
+Arguments object
+Array.prototype.filter()
+
+Required:
+- A modified array without the value/s defined in the second and succeeding arguments.
+
+Steps:
+- Get the values of the second and succeding arguments
+	> Do a loop that will pass by any given value from the second argument.
+
+- Create a test to get the values in an array
+	>
+
+- Store those values somewhere
+	> Store those values somewhere
+
+- Check if the stored values are existing in the initial array
+	> Use the stored values to perform the filter method
+
+- Remove those values in the intial array that are the same values as the succeeding arguments
+	> 

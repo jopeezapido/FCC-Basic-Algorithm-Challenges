@@ -1,20 +1,30 @@
-var len, rem, newArray;
+var lengthOfArray;
+var rem;
+var newArray = [];
+var bigArray = [];
+var slicer;
+var pushBig;
 
 function chunkArrayInGroups(arr, size) {
-  len = arr.length;
-  rem = len % size;
-  newArray = [];
-  /*if (rem === 0){
-    split("");
+  lengthOfArray = arr.length;
+  rem = lengthOfArray % size;
+
+  if (rem === 0){
+    for (i = 1; i <= lengthOfArray; i = i + size){
+      slicer = newArray.push(arr.slice(i,size));
+      pushBig = bigArray.push(newArray[i]);
+    }
+    console.log();
   }
-  else if(rem != 0){
-    return false;
-  }*/
-  
-  var x = arr.slice(0,size);
-  newArray.push(x);
-  
-  return newArray;
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+//Equal groupings:
+  chunkArrayInGroups(["a", "b", "c", "d"], 2);//[["a", "b"], ["c", "d"]]
+  chunkArrayInGroups([0, 1, 2, 3, 4, 5], 3);//[[0, 1, 2], [3, 4, 5]]
+  chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2);//[[0, 1], [2, 3], [4, 5]]
+
+//Unequal groupings
+  //chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4);//[[0, 1, 2, 3], [4, 5]]
+  //chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3);//[[0, 1, 2], [3, 4, 5], [6]]
+  //chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 4);//[[0, 1, 2, 3], [4, 5, 6, 7], [8]]
+  //chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2);//[[0, 1], [2, 3], [4, 5], [6, 7], [8]]
