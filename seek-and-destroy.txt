@@ -13,17 +13,12 @@ Required:
 - A modified array without the value/s defined in the second and succeeding arguments.
 
 Steps:
-- Get the values of the second and succeding arguments
-	> Do a loop that will pass by any given value from the second argument.
-
-- Create a test to get the values in an array
+- Transform the arguments into an array
+	> Use the .slice and .call function to turn the arguments into an array.
+- Get the values of the second and suceeding elements in the newly formed array.
 	>
+- Filter out the 1st array using the values of the second and succeeding elements
 
-- Store those values somewhere
-	> Store those values somewhere
 
-- Check if the stored values are existing in the initial array
-	> Use the stored values to perform the filter method
-
-- Remove those values in the intial array that are the same values as the succeeding arguments
-	> 
+Notes:
+- Arguments object is not an array

@@ -1,7 +1,15 @@
 var newArray = [];
 
 function destroyer(arr) {
-	var x = 
+	for (i=1; i <= 2; i++){
+		var argSlicer = arr.slice.call(arguments[i]);
+		console.log(argSlicer);
+	}
+	
+
+	//var splicer = argSlicer.splice();
+	//console.log(argSlicer);
+	//console.log(arr.length);
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);//[1, 1]

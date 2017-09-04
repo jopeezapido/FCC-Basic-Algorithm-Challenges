@@ -9,13 +9,15 @@ function chunkArrayInGroups(arr, size) {
   lengthOfArray = arr.length;
   rem = lengthOfArray % size;
 
-  if (rem === 0){
-    for (i = 1; i <= lengthOfArray; i = i + size){
-      slicer = newArray.push(arr.slice(i,size));
-      pushBig = bigArray.push(newArray[i]);
+    if (rem === 0){
+      //slicer = arr.slice(0,size)
+      for (i = 0; i <= arr.length; i++){
+        slicer = arr.slice(arr[i],size);
+        
+      }
     }
-    console.log();
-  }
+    console.log(slicer);
+  
 }
 
 //Equal groupings:
